@@ -1,14 +1,14 @@
 import React from 'react'
 import Logo from './Logo';
-import Link from 'next/link'
 
-const links = ["Home", "About" , <Logo /> , "Services" , "Contact"];
+const links = ["Home", "About" , "Services" , "Contact"];
 
 function Header() {
   return (
     <nav
-        className="bg-gray-900 text-white flex justify-center items-center h-20 py-4 px-6"
+        className="bg-gray-900 text-white flex justify-between items-center h-20 py-4 px-6"
     >
+        <Logo />
         <ul
             className="flex gap-6 list-none"
         >
